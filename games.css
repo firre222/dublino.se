@@ -193,6 +193,36 @@ header {
   transform: scale(1.1);
 }
 
+/* Ensure the text only appears on hover */
+.mobile-logo {
+  position: relative;
+  display: inline-block;
+}
+
+.mobile-logo img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.mobile-logo .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-logo:hover .hover-text {
+  opacity: 1;
+}
+
+
 
 .scroll-down {
   font-size: 2rem;

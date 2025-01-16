@@ -148,8 +148,15 @@ header {
   height: 100vh;
   background-color: transparent;
   text-align: center;
-
 }
+
+.header-image {
+  width: 100%;        /* Makes the image responsive */
+  max-width: 600px;   /* Prevents the image from becoming larger than its natural size */
+  height: auto;       /* Maintains the aspect ratio */
+  object-fit: contain; /* Ensures the image scales properly */
+}
+
 
 .animated-title {
   height: 40vh;
@@ -158,21 +165,6 @@ header {
   cursor: pointer;
   display: inline-block;
 }
-
-.header h1 {
-  margin: 0;
-  color: white;
-  font-size: 6rem;
-  font-weight: bold;
-  text-shadow: 
-    2px 2px 0 black,
-    -2px 2px 0 black,
-    2px -2px 0 black,
-    -2px -2px 0 black;
-  text-align: center;
-}
-
-
 
 .scroll-down {
   font-size: 2rem;
