@@ -151,10 +151,10 @@ header {
 }
 
 .header-image {
-  width: 100%;        /* Makes the image responsive */
-  max-width: 600px;   /* Prevents the image from becoming larger than its natural size */
-  height: auto;       /* Maintains the aspect ratio */
-  object-fit: contain; /* Ensures the image scales properly */
+  width: 100%; 
+  max-width: 600px;
+  height: auto; 
+  object-fit: contain; 
 }
 
 

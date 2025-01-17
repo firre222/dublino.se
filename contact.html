@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dublino</title>
     <link rel="stylesheet" href="contact.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
     
     <body>
@@ -69,6 +70,7 @@
         <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
         <input type="email" name="first" placeholder="Email Adress" autocomplete="off" required>
         <textarea rows="5" cols="60" name="message" placeholder="Enter Text" autocomplete="off" required></textarea>
+        <div class="g-recaptcha" data-sitekey="6LfFALsqAAAAAKzlifSHs1D9eIFhMiFhRPvdd9Bt"></div>
         <button type="submit">Send Message</button>
       </form>
       </div>
@@ -84,4 +86,7 @@
     </div>
     
     </body>
+
+    <script src="assets/js/_recaptcha.js"></script>
+
     </html>

@@ -169,11 +169,11 @@ header {
 /* General container styling */
 .logos, .phone-games {
   display: flex;
-  align-items: center; /* Horizontally center all child elements */
-  justify-content: center; /* Vertically center the content */
-  text-align: center; /* Center the text inside each div */
-  margin: 20px 0; /* Add margin for spacing between the sections */
-  flex-wrap: wrap; /* Allow images to wrap if necessary */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .logos a, .phone-games a {
@@ -193,7 +193,6 @@ header {
   transform: scale(1.1);
 }
 
-/* Ensure the text only appears on hover */
 .mobile-logo {
   position: relative;
   display: inline-block;
@@ -221,8 +220,6 @@ header {
 .mobile-logo:hover .hover-text {
   opacity: 1;
 }
-
-
 
 .scroll-down {
   font-size: 2rem;
