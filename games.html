@@ -9,50 +9,50 @@
 </head>
     
     <body>
-     <!--START OF NAV-->
-     <header>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-        <div class="navbar">
-            <div class="logo"><a href="index.html">Dublino.se</a></div>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li> <!-- Home link -->
-                <li><a href="services.html">Services</a></li> <!-- Services link -->
-                <li><a href="games.html">Games</a></li> <!-- Games link -->
-                <li><a href="contact.html">Contact</a></li> <!-- Contact link -->
-            </ul>
-            <a href="index.html" class="action_btn">Get Started</a>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
+         <!--START OF NAV-->
+         <header>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+            <div class="navbar">
+                <div class="logo"><a href="/">Dublino.se</a></div>
+                <ul class="links">
+                    <li><a href="/">Home</a></li> <!-- Home link -->
+                    <li><a href="services">Services</a></li> <!-- Services link -->
+                    <li><a href="games">Games</a></li> <!-- Games link -->
+                    <li><a href="contact">Contact</a></li> <!-- Contact link -->
+                </ul>
+                <a href="/" class="action_btn">Get Started</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
-        </div>
-
-        <div class="dropdown_menu">
-            <li><a href="index.html">Home</a></li> <!-- Home link -->
-            <li><a href="services.html">Services</a></li> <!-- Services link -->
-            <li><a href="games.html">Games</a></li> <!-- Games link -->
-            <li><a href="contact.html">Contact</a></li> <!-- Contact link -->
-            <li><a href="index.html" class="action_btn">Get Started</a></li>
-        </div>
-    </header>
-
-    <script>
-        // JavaScript for responsive navbar (toggle button)
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-    </script>
-
-    <!--END OF NAV-->
+    
+            <div class="dropdown_menu">
+                <li><a href="/">Home</a></li> <!-- Home link -->
+                <li><a href="services">Services</a></li> <!-- Services link -->
+                <li><a href="games">Games</a></li> <!-- Games link -->
+                <li><a href="contact">Contact</a></li> <!-- Contact link -->
+                <li><a href="/" class="action_btn">Get Started</a></li>
+            </div>
+        </header>
+    
+        <script>
+            // JavaScript for responsive navbar (toggle button)
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+    
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    
+        <!--END OF NAV-->
     <div class="view">
         <div class="header">
             <img  class="animated-title" src="images/dublinogames.png">
