@@ -6,7 +6,7 @@ const createAnnouncementBar = () => {
 
   bar.innerHTML = `
     <div class="message">
-      We're aware of the fullscreen bug and are working to fix it!
+      We're aware of the "blocked-bug" and are working to fix it!
     </div>
     <button class="close-btn" id="close-btn">×</button>
   `;
