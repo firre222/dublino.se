@@ -1,4 +1,3 @@
-// Create the announcement bar HTML content dynamically
 const createAnnouncementBar = () => {
   const bar = document.createElement('div');
   bar.className = 'announcement-bar';
@@ -19,7 +18,7 @@ const createAnnouncementBar = () => {
   style.innerHTML = `
     /* Announcement Bar */
     .announcement-bar {
-      position: relative;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -38,6 +37,7 @@ const createAnnouncementBar = () => {
 
     .announcement-bar .message {
       flex: 1;
+      margin-left: 10px;
     }
 
     .announcement-bar .close-btn {
@@ -46,7 +46,7 @@ const createAnnouncementBar = () => {
       color: white;
       font-size: 20px;
       cursor: pointer;
-      padding: 0 10px;
+      margin-right: 10px;
       font-weight: bold;
     }
 
@@ -54,15 +54,12 @@ const createAnnouncementBar = () => {
       color: #ff5722;
     }
 
-    /* Body padding to ensure content isn't hidden when bar is visible */
+    /* Ensure content below the bar is not hidden */
     body.announcement-visible {
-      padding-top: 50px; /* Adjust this value based on the height of your announcement bar */
+      margin-top: 40px; /* Adjust this value based on the height of your announcement bar */
     }
   `;
   document.head.appendChild(style);
-
-  // Set the height of the bar dynamically and adjust the body's padding accordingly
-  const barHeight = bar.offsetHeight;
 
   // Function to close the announcement bar
   const closeBtn = document.getElementById('close-btn');
@@ -70,10 +67,10 @@ const createAnnouncementBar = () => {
 
   closeBtn.addEventListener('click', () => {
     announcementBar.style.display = 'none';  // Hide the bar
-    document.body.classList.remove('announcement-visible'); // Remove padding-top from the body
+    document.body.classList.remove('announcement-visible'); // Remove the top margin from the body
   });
 
-  // Initially show the announcement bar and add padding to the body
+  // Initially show the announcement bar and add the top margin to the body
   document.body.classList.add('announcement-visible');
 };
 
