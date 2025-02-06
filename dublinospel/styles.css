@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1e1e1e; /* Dark background for a gaming feel */
+  background-color: #1e1e1e;
   font-family: 'Arial', sans-serif;
 }
 
@@ -78,7 +78,6 @@ body {
   overflow: hidden;
 }
 
-/* Style for the iframe itself */
 iframe {
   width: 100%;
   height: 100%;
@@ -87,7 +86,7 @@ iframe {
   border-radius: 5px;
 }
 
-/* Logo section styles */
+/* Logo/games section styles */
 .logos,
 .phone-games {
     display: flex;
@@ -158,7 +157,7 @@ iframe {
 @media (max-width: 768px) {
     .logos img,
     .phone-games img {
-        width: 80px; /* Smaller size for smaller screens */
+        width: 80px;
     }
 }
 
