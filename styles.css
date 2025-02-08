@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation: fadeIn 1s ease-out;
 }
 
 .main-content {
@@ -15,7 +16,7 @@ body {
   overflow: hidden;
 }
 
-/*START OF NAV*/
+/* START OF NAV */
 
 li {
   list-style: none;
@@ -28,7 +29,7 @@ a {
 }
 
 a:hover {
-  color: orange
+  color: orange;
 }
 
 header {
@@ -44,6 +45,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: slideUp 1s ease-out;
 }
 
 .navbar .logo a {
@@ -85,22 +87,27 @@ header {
   scale: 0.95;
 }
 
-.dropdown_menu{
+.dropdown_menu {
   position: absolute;
   right: 2rem;
   top: 60px;
   width: 300px;
   height: 0;
+  max-height: 180px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
-  overflow: hidden;
+  overflow-y: auto;
   transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown_menu.open{
+.dropdown_menu.open {
   height: 180px;
+}
 
+.dropdown_menu::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .dropdown_menu li {
@@ -116,8 +123,8 @@ header {
   justify-content: center;
 }
 
-@media(max-width: 992px){
-  .navbar  .links,
+@media (max-width: 992px) {
+  .navbar .links,
   .navbar .action_btn {
     display: none;
   }
@@ -126,20 +133,21 @@ header {
     display: block;
   }
 
-  .dropdown_menu{
+  .dropdown_menu {
     display: block;
   }
 }
 
-@media(max-width: 576px) {
-.dropdown_menu {
-  left: 2rem;
-  width: unset;
-}
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
 }
 
-/*END OF NAV*/
+/* END OF NAV */
 
+/* Hero Section */
 .header {
   display: flex;
   flex-direction: column;
@@ -148,15 +156,15 @@ header {
   height: 100vh;
   background-color: transparent;
   text-align: center;
+  animation: fadeIn 1s ease-out;
 }
 
 .header-image {
-  width: 100%; 
+  width: 100%;
   max-width: 600px;
-  height: auto; 
-  object-fit: contain; 
+  height: auto;
+  object-fit: contain;
 }
-
 
 .animated-title {
   height: 40vh;
@@ -164,6 +172,7 @@ header {
   position: relative;
   cursor: pointer;
   display: inline-block;
+  animation: slideUp 1s ease-out;
 }
 
 .scroll-down {
@@ -188,30 +197,170 @@ header {
   }
 }
 
-.description-section {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: var(--nord0);
-  background-position-x: center;
+/* Patchnotes Section */
+.patchnotes-section {
+  padding: 30px 15px;
+  background-color: #222;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  margin: 30px 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 500px;
+  overflow-y: scroll;
+  animation: fadeInUp 1.5s ease-out;
 }
 
-.description-section h1 {
+.patchnotes-section::-webkit-scrollbar {
+  display: none;
+}
+
+.patchnotes-section {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.current-version {
+  font-size: 1rem;
+  right: 20px;
+  color: #52d113;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: -30px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+  animation: slideIn 1s ease-out;
+}
+
+.patchnotes-title {
   font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+  animation: slideIn 1s ease-out;
+  text-align: center;
+}
+
+.patchnote {
+  background-color: #333;
+  border-left: 5px solid #ffffff;
+  padding: 20px;
   margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-out;
+  max-height: 350px;
+  overflow-y: auto;
 }
 
-.description-section p {
-  font-size: 1.2rem;
-  color: #555;
-  max-width: 800px;
+.patchnote:hover {
+  background-color: #444;
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.patchnote-title {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.patchnote-description {
+  font-size: 1.1rem;
+  color: #bbb;
+  max-width: 700px;
   margin: 0 auto;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 15px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .patchnotes-title {
+    font-size: 2.5rem;
+  }
+
+  .patchnote-title {
+    font-size: 1.8rem;
+  }
+
+  .patchnote-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .patchnotes-title {
+    font-size: 2rem;
+  }
+
+  .patchnote-title {
+    font-size: 1.4rem;
+  }
+
+  .patchnote-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Contact Section */
 .contact-us {
   color: white;
   padding: 30px;
   text-align: center;
   background-image: url(/images/waves.svg);
+  animation: fadeInUp 2s ease-out;
 }
 
 .contact-us h2 {
@@ -285,12 +434,13 @@ header {
   }
 }
 
-@keyframes appear{
-  from{
+/* New Appear Animation */
+@keyframes appear {
+  from {
     opacity: 0;
     clip-path: inset(100% 100% 0 0);
   }
-  to{
+  to {
     opacity: 1;
     clip-path: inset(0 0 0 0);
   }
