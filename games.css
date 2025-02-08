@@ -177,10 +177,11 @@ header {
 /* Logos Section */
 .logos {
   display: flex;
+  max-width: 70%;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px auto;
   flex-wrap: wrap;
   opacity: 0;
   animation: fadeInUp 1s forwards 1s;

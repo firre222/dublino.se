@@ -87,17 +87,14 @@ iframe {
 }
 
 /* Logo/games section styles */
-.logos,
-.phone-games {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15px;
-    gap: 10px;
-}
-
-.phone-games {
-  margin-bottom: 40px
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto 30px;
+  gap: 10px;
+  width: 65%;
 }
 
 .mobile-logo a {
@@ -139,8 +136,7 @@ iframe {
 }
 
 /* General styling for all logos */
-.logos a img,
-.phone-games a img {
+.logos a img {
     width: 120px;
     height: auto;
     border-radius: 8px;
@@ -148,15 +144,13 @@ iframe {
 }
 
 /* Add hover effect for all logos */
-.logos a:hover img,
-.phone-games a:hover img {
+.logos a:hover img {
     transform: scale(1.1);
 }
 
 /* Make logos responsive */
 @media (max-width: 768px) {
-    .logos img,
-    .phone-games img {
+    .logos img {
         width: 80px;
     }
 }
