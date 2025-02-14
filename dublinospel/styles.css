@@ -29,12 +29,14 @@ body {
 /* Button container styling */
 .btn-container {
   position: relative;
-  width: 80%;
-  max-width: 1340px;
+  width: 100%;
+  min-width: 700px;
+  max-width: 100px;
   display: flex;
   justify-content: flex-end;
   margin-top: -55px;
   margin-bottom: 50px;
+  right: 90px;
 }
 
 /* Button styling */
@@ -94,7 +96,7 @@ iframe {
   align-items: center;
   margin: 15px auto 30px;
   gap: 10px;
-  width: 65%;
+  width: 60%;
 }
 
 .mobile-logo a {

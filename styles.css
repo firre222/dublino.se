@@ -354,6 +354,8 @@ header {
   }
 }
 
+
+
 /* Contact Section */
 .contact-us {
   color: white;
@@ -380,58 +382,6 @@ header {
 
 .contact-us a:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 4rem;
-  }
-
-  .animated-title {
-    font-size: 3rem;
-  }
-
-  .logos img {
-    width: 150px;
-  }
-
-  .scroll-down {
-    font-size: 1.5rem;
-  }
-
-  .contact-us h2 {
-    font-size: 1.5rem;
-  }
-
-  .contact-us p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 3.5rem;
-  }
-
-  .animated-title {
-    font-size: 2.5rem;
-  }
-
-  .scroll-down {
-    font-size: 1.2rem;
-  }
-
-  .logos img {
-    width: 120px;
-  }
-
-  .contact-us h2 {
-    font-size: 1.3rem;
-  }
-
-  .contact-us p {
-    font-size: 1rem;
-  }
 }
 
 /* New Appear Animation */
