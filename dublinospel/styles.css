@@ -1,0 +1,180 @@
+/* Body and global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+.game-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.game-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.game-header p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Adjusting the position of the fullscreen button */
+.btn-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#btn {
+  padding: 10px 13px;
+  background-color: #2b2b2b;
+  border: 0px black;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#btn:hover {
+  padding: 10px 13px;
+  background-color: #2b2b2b;
+  border: 0px black;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  margin-bottom: -3px;
+}
+
+/* Container for the iframe (game) */
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.iframe-box {
+  width: 80%;
+  max-width: 800px;
+  height: 600px;
+  position: relative;
+  background: #000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  border: 3px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Logo/games section styles */
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto 30px;
+  gap: 10px;
+  width: 60%;
+}
+
+.mobile-logo a {
+    position: relative;
+    display: inline-block;
+}
+
+.mobile-logo img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.mobile-logo:hover img {
+    transform: scale(1.1);
+}
+
+.mobile-logo span.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.mobile-logo:hover span.hover-text {
+    opacity: 1;
+}
+
+/* General styling for all logos */
+.logos a img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect for all logos */
+.logos a:hover img {
+    transform: scale(1.1);
+}
+
+/* Make logos responsive */
+@media (max-width: 768px) {
+    .logos img {
+        width: 80px;
+    }
+}
+
+.contact-us {
+  padding: 30px;
+  text-align: center;
+  background-image: url('https://chstextbook.github.io/assets/img/waves.svg');
+  color: #fff;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+  min-height: 20px;
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+}
+
+.contact-us a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact-us a:hover {
+  text-decoration: underline;
+}
