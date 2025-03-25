@@ -384,6 +384,63 @@ header {
   text-decoration: underline;
 }
 
+/* Latest Games Section */
+.latest-games {
+  text-align: center;
+  padding: 40px;
+}
+
+.latest-games h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.games-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.game-item {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.game-item:hover {
+  transform: translateY(-5px);
+}
+
+.dark-mode .game-item {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.game-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.game-item a {
+  display: block;
+  margin-top: 10px;
+  padding: 8px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.game-item a:hover {
+  background: #2980b9;
+}
+
 /* New Appear Animation */
 @keyframes appear {
   from {
