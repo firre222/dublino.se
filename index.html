@@ -1,59 +1,81 @@
-<!doctype html>
-<title>Dublino.se</title>
-<style>
-body { 
-    text-align: center; 
-    padding: 1px; 
-    font: 22px 'Arial', sans-serif; 
-    color: #333; 
-    background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/"> 
+    <title>Dublino</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1677034433414352"
+    crossorigin="anonymous"></script>
+</head>
+<body>
 
-h1 { 
-    font-size: 55px;
-    font-weight: bold;
-    color: #222;
-}
+    <script src="./assets/js/navbar.js"></script>
 
-article { 
-    display: block; 
-    text-align: center; 
-    width: 90%; 
-    max-width: 700px; 
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+    <!-- HERO SECTION -->
+    <div class="view">
+        <div class="header">
+            <img src="images/logo_transparent_background.png" alt="Header Image" class="header-image">
+            <h3 class="scroll-down">↓ Scroll Down ↓</h3>
+        </div>
+        
+        <!-- LATEST GAMES SECTION -->
+        <section class="latest-games">
+            <h1>Latest Games</h1>
+            <div class="games-container">
+                <div class="game-item">
+                    <img src="https://ubg-98.github.io/wp-content/uploads/2024/12/brain-test-2-tricky-stories.png" alt="Game 1">
+                    <h3>Brain Test 2</h3>
+                    <p>New exciting game with quickthinking gameplay!</p>
+                    <a href="dublinospel/BrainTest2/">Play Now</a>
+                </div>
+                <div class="game-item">
+                    <img src="https://i.etsystatic.com/47001806/r/il/cd52b9/5731274756/il_fullxfull.5731274756_ojun.jpg" alt="Game 2">
+                    <h3>Wordle</h3>
+                    <p>Wordle is a letter-game that offers a thinking gameplay!</p>
+                    <a href="dublinospel/wordle/">Play Now</a>
+                </div>
+            </div>
+        </section>
 
-a { 
-    color: #dc8100; 
-    text-decoration: none; 
-    font-weight: bold;
-}
+        <!-- PATCH NOTES SECTION -->
+        <div class="patchnotes-section">
+            <h1 class="patchnotes-title">Patchnotes</h1>
 
-a:hover { 
-    color: #555; 
-    text-decoration: underline; 
-}
+            <div class="patchnote">
+                <p class="current-version">Current version</p>
+                <h2 class="patchnote-title">Update 1.2.5</h2>
+                <p class="patchnote-description">Added new features like fullscreen mode and improved UI responsiveness for mobile devices.</p>
+              </div>
 
-p { 
-    line-height: 1.6; 
-    margin-bottom: 15px;
-}
-
-</style>
-
-<article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:#">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
-        <p>&mdash; The Dublino Team</p>
+            <div class="patchnote">
+              <h2 class="patchnote-title">Update 1.2.0</h2>
+              <p class="patchnote-description">Added fade-up animations on each section. Tools tab was also added and is being worked on.</p>
+            </div>
+      
+            <div class="patchnote">
+              <h2 class="patchnote-title">Update 1.1.5</h2>
+              <p class="patchnote-description">Fixed several bugs, including game issues and slow performance on certain devices.</p>
+            </div>
+      
+            <div class="patchnote">
+              <h2 class="patchnote-title">Update 1.1.0</h2>
+              <p class="patchnote-description">Initial release with core features like adfree-games, and content management.</p>
+            </div>
     </div>
-</article>
+
+    <!-- CONTACT SECTION -->
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us:</p>
+        <p>Email: <a href="mailto:info@dublino.com">info@dublino.com</a></p>
+        <p>Follow us or join our community server for updates and more:</p>
+        <p><a href="https://discord.gg/Nb3Gj9QDQF">Discord</a> | <a href="https://x.com/Dublinose">Twitter</a></p>
+        <p>&copy; 2025 Dublino.se</p>
+    </div>
+
+    <script src="./assets/js/loading.js"></script>
+
+</body>
+</html>

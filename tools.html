@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dublino Tools</title>
+    <link rel="stylesheet" href="tools.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+    <body>
+     <!--START OF NAV-->
+     <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+        <div class="navbar">
+            <div class="logo"><a href="/">Dublino.se</a></div>
+            <ul class="links">
+                <li><a href="/">Home</a></li> <!-- Home link -->
+                <li><a href="services">Services</a></li> <!-- Services link -->
+                <li><a href="games">Games</a></li> <!-- Games link -->
+                <li><a href="contact">Contact</a></li> <!-- Contact link -->
+                <li><a href="tools">Tools</a></li> <!-- Tools link -->
+            </ul>
+            <a href="/" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="/">Home</a></li> <!-- Home link -->
+            <li><a href="services">Services</a></li> <!-- Services link -->
+            <li><a href="games">Games</a></li> <!-- Games link -->
+            <li><a href="contact">Contact</a></li><!-- Contact link -->
+            <li><a href="tools">Tools</a></li> <!-- Tools link -->
+            <li><a href="/" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+
+    
+
+    <script>
+        // JavaScript for responsive navbar (toggle button)
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <!--END OF NAV-->
+    <div class="view">
+        <div class="header">
+            <img class="animated-title" src="https://media1.tenor.com/m/SBaHXwhhIbMAAAAC/coming-soon.gif">
+            <h3 class="scroll-down">↓ Scroll Down ↓</h3>
+        </div>
+
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us:</p>
+            <p>Email: <a href="mailto:info@dublino.com">info@dublino.com</a></p>
+            <p>Follow us or join our community server for updates and more:</p>
+            <p><a href="https://discord.gg/Nb3Gj9QDQF">Discord</a> | <a href="https://x.com/Dublinose">Twitter</a></p>
+            <p>&copy; 2025 Dublino.se</p>
+        </div>
+    </div>
+    
+    </body>
+        <script src="./assets/js/loading.js"></script>
+    </html>
