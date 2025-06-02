@@ -5,7 +5,7 @@ const createAnnouncementBar = () => {
 
   bar.innerHTML = `
     <div class="message">
-      We are experiencing some problems with our servers atm. We're working on the problem and will find a solution in a short period of time.
+      An ongoing event is taking place! <a href="./summit" target="_blank" class="learn-more-link">Learn more</a>.
     </div>
     <button class="close-btn" id="close-btn">×</button>
   `;
@@ -54,6 +54,16 @@ const createAnnouncementBar = () => {
       color: #ff5722;
     }
 
+    /* Link Styling */
+    .announcement-bar .learn-more-link {
+      text-decoration: underline;
+      color: white;
+    }
+
+    .announcement-bar .learn-more-link:hover {
+      color: #ff5722;
+    }
+
     /* Ensure content below the bar is not hidden */
     body.announcement-visible {
       margin-top: 40px; /* Adjust this value based on the height of your announcement bar */
@@ -76,8 +86,3 @@ const createAnnouncementBar = () => {
 
 // Run the function to create the bar when the DOM is ready
 document.addEventListener('DOMContentLoaded', createAnnouncementBar);
-
-
-//NÄR DU SKA SÄTTA UT ANNOUCEMENT, GÖR DÅ SÅHÄR:
-
-//1. Sätt <script src="/anmt.js"></script> i HTML och ändra text.
