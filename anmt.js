@@ -5,7 +5,7 @@ const createAnnouncementBar = () => {
 
   bar.innerHTML = `
     <div class="message">
-      An ongoing event is taking place! <a href="./summit" target="_blank" class="learn-more-link">Learn more</a>.
+      We are aware that some games doesn't work atm. They will be updated in the feature.
     </div>
     <button class="close-btn" id="close-btn">×</button>
   `;
